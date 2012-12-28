@@ -1,0 +1,23 @@
+{
+  "name": "ada-on",
+  "version": "0.0.0",
+  "description": "Subscribe/unsubscribe to multiple pubsubs at once",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "ada-pubsub": "*",
+    "chai": "*",
+    "mocha": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:adaio/on.git"
+  },
+  "keywords": [
+    "pubsub"
+  ],
+  "author": "Azer Koculu <azer@kodfabrik.com>",
+  "license": "BSD"
+}

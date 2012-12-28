@@ -1,0 +1,13 @@
+{
+  "name": "on",
+  "repo": "adaio/on",
+  "description": "Subscribe/unsubscribe to multiple pubsubs",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
