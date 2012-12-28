@@ -8,7 +8,7 @@ var a = pubsub(),
     b = pubsub(),
     c = pubsub();
 
-pubsub.on(a, b, c, function(updates){
+on(a, b, c, function(updates){
     updates[0].pubsub;
     // => a.onUpdate
     updates[0].params;
