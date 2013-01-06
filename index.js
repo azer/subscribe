@@ -25,10 +25,11 @@ function on(/* pubsubs..., callback */){
   }
 
   function add(){
-    var i = arguments.length,
+    var i = -1,
+        len = arguments.length,
         cb;
 
-    while( i --> 0 ){
+    while( ++i < len ){
       cb = newSubscriber(arguments[i]);
       arguments[i].subscribe(cb);
 
@@ -54,6 +55,7 @@ function on(/* pubsubs..., callback */){
   add.apply(undefined, Array.prototype.slice.call(arguments, 0, arguments.length - 1));
 
   return {
+    subscriptions: subscriptions,
     subscribeTo: add,
     unsubscribeTo: rm
   };

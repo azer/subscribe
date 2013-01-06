@@ -29,3 +29,27 @@ it('can combine multiple pubsubs', function(done){
   b.publish();
   c.publish();
 });
+
+it('exports subscriptions', function(done){
+
+  var a = pubsub(),
+      b = pubsub(),
+      c = pubsub(),
+      d = pubsub(),
+
+      e = on(a, b, function(changed){
+      });
+
+  e.subscribeTo(c, d);
+
+  e.unsubscribeTo(b);
+  e.unsubscribeTo(d);
+
+  e.subscriptions.length.should.be.equal(4);
+
+  should.not.exist(e.subscriptions[1]);
+  should.not.exist(e.subscriptions[4]);
+
+
+  done();
+});

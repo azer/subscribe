@@ -2,7 +2,7 @@
   "name": "on",
   "repo": "adaio/on",
   "description": "Subscribe/unsubscribe to multiple pubsubs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "dependencies": {},
   "development": {},

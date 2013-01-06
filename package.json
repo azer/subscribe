@@ -1,6 +1,6 @@
 {
   "name": "ada-on",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Subscribe/unsubscribe to multiple pubsubs at once",
   "main": "index.js",
   "scripts": {
