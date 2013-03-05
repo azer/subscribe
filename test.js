@@ -9,11 +9,13 @@ it('can combine multiple pubsubs', function(done){
       d = pubsub(),
 
       e = on(a, b, function(changed){
-        changed.length.should.be.equal(2);
-        changed[0].pubsub.should.be.equal(a);
-        changed[1].pubsub.should.be.equal(c);
+        expect(changed.length).to.equal(2);
 
-        calledOnce.should.be.true;
+        expect(changed[0].pubsub).to.equal(a);
+        expect(changed[1].pubsub).to.equal(c);
+
+        expect(calledOnce).to.be.true;
+
         calledOnce = false;
 
         done();
@@ -45,11 +47,11 @@ it('exports subscriptions', function(done){
   e.unsubscribeTo(b);
   e.unsubscribeTo(d);
 
-  e.subscriptions.length.should.be.equal(4);
+  expect(e.subscriptions.length).to.equal(4);
 
-  should.not.exist(e.subscriptions[1]);
-  should.not.exist(e.subscriptions[4]);
 
+  expect(e.subscriptions[1]).to.not.exist;
+  expect(e.subscriptions[4]).to.not.exist;
 
   done();
 });
