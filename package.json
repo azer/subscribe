@@ -7,8 +7,8 @@
     "test": "highkick"
   },
   "devDependencies": {
-    "pubsub": "adaio/pubsub",
-    "highkick": "*"
+    "ada-pubsub": "*",
+    "fox": "*"
   },
   "repository": {
     "type": "git",

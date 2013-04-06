@@ -1,4 +1,4 @@
-var should = require('chai').should(),
+var expect = require('chai').expect,
     pubsub = require('ada-pubsub'),
     on     = require('./');
 
