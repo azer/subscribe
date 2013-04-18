@@ -1,8 +1,9 @@
 Calls the callback when any of given pubsub instances is emitted.
 
+
 ```js
-var pubsub = require('ada-pubsub'),
-    on     = require('ada-on');
+var pubsub = require('new-pubsub'),
+    on = require('on-pub');
 
 var a = pubsub(),
     b = pubsub(),
