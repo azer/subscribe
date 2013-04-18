@@ -1,18 +1,18 @@
 {
-  "name": "ada-on",
-  "version": "0.0.4",
-  "description": "Subscribe/unsubscribe to multiple pubsubs at once",
+  "name": "subscribe",
+  "version": "0.0.0",
+  "description": "Subscribe/unsubscribe to multiple pubsubs",
   "main": "index.js",
   "scripts": {
-    "test": "highkick"
+    "test": "fox"
   },
   "devDependencies": {
-    "ada-pubsub": "*",
+    "new-pubsub": "*",
     "fox": "*"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:adaio/on.git"
+    "url": "git@github.com:azer/subscribe.git"
   },
   "keywords": [
     "pubsub"
