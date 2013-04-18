@@ -1,15 +1,14 @@
-Calls the callback when any of given pubsub instances is emitted.
-
+Subscribe to multiple pub/subs.
 
 ```js
 var pubsub = require('new-pubsub'),
-    on = require('on-pub');
+    subscribe = require('subscribe');
 
 var a = pubsub(),
     b = pubsub(),
     c = pubsub();
 
-on(a, b, c, function(updates){
+subscribe(a, b, c, function(updates){ // or subscribe.once(a, b, c, function(){ ...
     updates[0].pubsub;
     // => a.onUpdate
     updates[0].params;
