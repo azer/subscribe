@@ -11,7 +11,7 @@ $ npm install subscribe
 ## Usage
 
 ```js
-pubsub = require('new-pubsub')
+pubsub = require('pubsub')
 subscribe = require('subscribe')
 
 a = pubsub()
