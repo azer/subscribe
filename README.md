@@ -1,4 +1,4 @@
-## subscribe
+## subscribe [![Build Status](https://travis-ci.org/azer/subscribe.png)](https://travis-ci.org/azer/subscribe)
 
 Subscribe to multiple pub/subs.
 
